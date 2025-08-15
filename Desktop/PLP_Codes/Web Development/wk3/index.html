@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wambugu - Car Rental Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Wambugu Car Rental</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#cars">Our Cars</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Rent the Perfect Car for Your Journey</h2>
+                    <p>Choose from our wide selection of vehicles for any occasion</p>
+                    <a href="#cars" class="btn">Browse Cars</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cars" class="car-selection">
+            <div class="container">
+                <h2>Ride selection</h2>
+                <p class="section-description">Select from our premium collection of vehicles</p>
+                
+                <div class="car-grid">
+                    <!-- Car Card 1 -->
+                    <div class="car-card">
+                       <div class="car-image" style="background-image: url('https://images.pexels.com/photos/18476537/pexels-photo-18476537.jpeg?auto=compress&cs=tinysrgb&h=500&w=500'); background-size: cover; background-position: center; width: 400px; height: 500px;"></div>
+
+                        <div class="car-details">
+                            <h3>Vintage Mazda 929</h3>
+                            <ul class="car-features">
+                                <li>5 Seats</li>
+                                <li>Manual</li>
+                                <li>Air Conditioning</li>
+                            </ul>
+                            <div class="price">Ksh.4OOO/day</div>
+                            <label class="checkbox-container">
+                                <input type="checkbox" class="car-select">
+                                <span class="checkmark"></span>
+                                Select this car
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Car Card 2 -->
+                    <div class="car-card">
+                        <div class="car-image" style="background-image: url('https://images.pexels.com/photos/10430773/pexels-photo-10430773.jpeg');background-size: cover;background-position: center;width: 400px;  /* adjust as needed */height: 500px; /* adjust as needed */"></div>
+
+                        <div class="car-details">
+                            <h3>Black Mercedez Benz</h3>
+                            <ul class="car-features">
+                                <li>5 Seats</li>
+                                <li>Automatic</li>
+                                <li>Premium Sound</li>
+                            </ul>
+                            <div class="price">Ksh.7500/day</div>
+                            <label class="checkbox-container">
+                                <input type="checkbox" class="car-select">
+                                <span class="checkmark"></span>
+                                Select this car
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Car Card 3 -->
+                    <div class="car-card">
+                        <div class="car-image" style="background-image: url('https://images.pexels.com/photos/10822358/pexels-photo-10822358.jpeg');background-size: cover;background-position: center;width: 400px;   /* adjust as needed */height: 500px;  /* adjust as needed */"></div>
+                        <div class="car-details">
+                            <h3>4x4 Car Adventure</h3>
+                            <ul class="car-features">
+                                <li>7 Seats</li>
+                                <li>Automatic</li>
+                                <li>4WD</li>
+                            </ul>
+                            <div class="price">Ksh.6000/day</div>
+                            <label class="checkbox-container">
+                                <input type="checkbox" class="car-select">
+                                <span class="checkmark"></span>
+                                Select this car
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <h2>Pricing Plans</h2>
+                <p class="section-description">Choose the rental plan that fits your needs</p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Daily</h3>
+                        <div class="price">From ksh.2500/day</div>
+                        <ul class="features">
+                            <li>Flexible daily rental</li>
+                            <li>Unlimited mileage</li>
+                            <li>24/7 Roadside assistance</li>
+                        </ul>
+                        <a href="#contact" class="btn outline">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-card featured">
+                        <div class="badge">Popular</div>
+                        <h3>Weekly</h3>
+                        <div class="price">Ksh.4500/week</div>
+                        <ul class="features">
+                            <li>7 days for the price of 5</li>
+                            <li>Unlimited mileage</li>
+                            <li>24/7 Roadside assistance</li>
+                            <li>Free additional driver</li>
+                        </ul>
+                        <a href="#contact" class="btn">Book Now</a>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <h3>Monthly</h3>
+                        <div class="price">Ksh.9000/month</div>
+                        <ul class="features">
+                            <li>Best long-term value</li>
+                            <li>Unlimited mileage</li>
+                            <li>24/7 Roadside assistance</li>
+                            <li>Free additional driver</li>
+                            <li>Regular maintenance included</li>
+                        </ul>
+                        <a href="#contact" class="btn outline">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Book Your Car</h2>
+                <p class="section-description">Fill out the form below to reserve your vehicle</p>
+                
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pickup">Pickup Date</label>
+                        <input type="date" id="pickup" name="pickup" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="return">Return Date</label>
+                        <input type="date" id="return" name="return" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="car-type">Car Type</label>
+                        <select id="car-type" name="car-type" required>
+                            <option value="">Select a car</option>
+                            <option value="mazda">Vintage Mazda 929</option>
+                            <option value="benz">Black Mercedez Benz</option>
+                            <option value="4x4">4x4 Car Adventure</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn">Submit Booking</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Wambugu Car Rentals</h3>
+                    <p>Your trusted car rental service since 2010.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#cars">Our Cars</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Kenyatta Avenue</p>
+                    <p>Nairobi, Kenya</p>
+                    <p>Phone: +254 713 592386</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Wambugu Car Rental. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

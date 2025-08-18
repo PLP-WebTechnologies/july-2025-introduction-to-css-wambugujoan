@@ -1,0 +1,95 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: #4a90e2;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.navbar ul {
+  display: flex; /* Flexbox for horizontal nav */
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Main Layout (Grid) */
+.site-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Sidebar + Content */
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.sidebar {
+  background: #f4f4f4;
+  padding: 1rem;
+}
+.content {
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+/* Flexbox Example: Cards */
+.card-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.card {
+  flex: 1;
+  background: #e6f0ff;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Footer */
+.site-footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* =====================
+   Responsive Design
+   ===================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .site-main {
+    grid-template-columns: 1fr; /* Stack sidebar & content */
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+  .card-container {
+    flex-direction: column; /* Stack cards vertically */
+  }
+}
